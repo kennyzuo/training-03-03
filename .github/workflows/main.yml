@@ -55,5 +55,5 @@ jobs:
             cd /home/kenny/workplace/realworld
             wget https://github.com/kennyzuo/training-03-03/releases/latest/download/release.tgz -O release.tgz
             tar zxvf release.tgz
-            yarn
-            pm2 reload pm2.config.json
+            /home/kenny/soft/node-v10.23.0-linux-x64/bin/yarn
+            /home/kenny/soft/node-v10.23.0-linux-x64/bin/pm2 reload pm2.config.json
