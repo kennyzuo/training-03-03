@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-10 offset-md-1">
-            <img src="http://i.imgur.com/Qr71crq.jpg" class="user-img" />
+            <img src="https://www.keaidian.com/uploads/allimg/190401/01132213_3.jpg" class="user-img" />
             <h4>Kenny Zuo</h4>
             <p>
               Cofounder @GoThinkster, lived in Aol's HQ for a few months, kinda
