@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-10 offset-md-1">
             <img src="http://i.imgur.com/Qr71crq.jpg" class="user-img" />
-            <h4>Eric Simons</h4>
+            <h4>Kenny Zuo</h4>
             <p>
               Cofounder @GoThinkster, lived in Aol's HQ for a few months, kinda
               looks like Peeta from the Hunger Games
