@@ -5,7 +5,9 @@
   "author": "kennyzuo <353715843@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
   },
   "dependencies": {
     "nuxt": "^2.14.11"

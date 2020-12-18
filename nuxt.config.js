@@ -4,6 +4,7 @@
 
 module.exports = {
   router: {
+    linkActiveClass: "active",
     extendRoutes(routes, resolve) {
       console.log(routes)
       // 删除默认路由规则
@@ -61,7 +62,6 @@ module.exports = {
                 name: "article",
                 component: resolve(__dirname, "pages/article/"),
               },
-             
             ],
           },
         ]
@@ -72,5 +72,9 @@ module.exports = {
       //   component: resolve(__dirname, "pages/404.vue"),
       // })
     },
+  },
+  server: {
+    host: "0.0.0.0",
+    port: 3000,
   },
 }
