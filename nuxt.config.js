@@ -64,6 +64,10 @@ module.exports = {
               },
             ],
           },
+          {
+            path: "/mumu",
+            component: resolve(__dirname, "pages/mumu"),
+          },
         ]
       )
       // routes.push({
