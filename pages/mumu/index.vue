@@ -8,7 +8,7 @@
       <div><span>U</span></div>
       <div><span>!</span></div>
     </div>
-    <h1>LOVE YOU -- daidai</h1>
+    <h1 style="color: #fff">LOVE YOU -- daidai</h1>
   </div>
 </template>
 <script>
