@@ -57,6 +57,7 @@
 </template>
 <script>
 import { login, register } from "@/api/user.js"
+const Cookie = process.client ? require("js-cookie") : null
 export default {
   name: "Login",
   props: ["isLogin"],
@@ -79,8 +80,15 @@ export default {
         let params = {
           user: this.user,
         }
-        this.isLogin ? await login(params) : await register(params)
-        this.$router.push("/")
+        let { data } = this.isLogin
+          ? await login(params)
+          : await register(params)
+        console.log(data)
+        // 将 data.user 存储到 store 中
+        this.$store.commit("setUser", data.user)
+        // 将 data.user 持久化
+        Cookie.set("user", data.user)
+        // this.$router.push("/")
       } catch (err) {
         this.errors = err.response.data.errors
       }
