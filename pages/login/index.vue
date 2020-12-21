@@ -11,28 +11,39 @@
           </p>
 
           <ul class="error-messages">
-            <li>That email is already taken</li>
+            <template v-for="(messages, field) in errors">
+              <li v-for="(message, index) in messages" :key="index">
+                {{ field }} {{ message }}
+              </li>
+            </template>
           </ul>
-          <form>
+          <form @submit.prevent="onSubmit">
             <fieldset class="form-group" v-if="!isLogin">
               <input
                 class="form-control form-control-lg"
                 type="text"
+                v-model="user.username"
                 placeholder="Your Name"
+                required
               />
             </fieldset>
             <fieldset class="form-group">
               <input
                 class="form-control form-control-lg"
-                type="text"
+                type="email"
+                v-model="user.email"
                 placeholder="Email"
+                required
               />
             </fieldset>
             <fieldset class="form-group">
               <input
                 class="form-control form-control-lg"
                 type="password"
+                v-model="user.password"
                 placeholder="Password"
+                minlength="8"
+                required
               />
             </fieldset>
             <button class="btn btn-lg btn-primary pull-xs-right">
@@ -45,13 +56,35 @@
   </div>
 </template>
 <script>
+import { login, register } from "@/api/user.js"
 export default {
   name: "Login",
   props: ["isLogin"],
-  // computed: {
-  //   isLogin() {
-  //     return this.$route.name === "login"
-  //   }
-  // }
+  data() {
+    return {
+      user: {
+        username: "",
+        email: "",
+        password: "",
+      },
+      errors: {},
+    }
+  },
+  methods: {
+    /**
+     * kennyzuodaidai@qq.com xiaodaidai
+     */
+    async onSubmit() {
+      try {
+        let params = {
+          user: this.user,
+        }
+        this.isLogin ? await login(params) : await register(params)
+        this.$router.push("/")
+      } catch (err) {
+        this.errors = err.response.data.errors
+      }
+    },
+  },
 }
 </script>

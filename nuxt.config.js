@@ -63,13 +63,9 @@ module.exports = {
                 component: resolve(__dirname, "pages/article/"),
               },
             ],
-          }
+          },
         ]
       )
     },
-  },
-  server: {
-    host: "0.0.0.0",
-    port: 3000,
   },
 }
