@@ -88,7 +88,7 @@ export default {
         this.$store.commit("setUser", data.user)
         // 将 data.user 持久化
         Cookie.set("user", data.user)
-        // this.$router.push("/")
+        this.$router.push("/")
       } catch (err) {
         this.errors = err.response.data.errors
       }

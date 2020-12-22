@@ -7,6 +7,12 @@ export const state = () => {
   }
 }
 
+export const getters = {
+  isLogin(state) {
+    return !!state.user
+  }
+}
+
 export const mutations = {
   setUser(state, data) {
     state.user = data
