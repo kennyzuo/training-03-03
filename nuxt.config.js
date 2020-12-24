@@ -6,7 +6,6 @@ module.exports = {
   router: {
     linkActiveClass: "active",
     extendRoutes(routes, resolve) {
-      console.log(routes)
       // 删除默认路由规则
       routes.splice(0)
 

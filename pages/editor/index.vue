@@ -50,5 +50,6 @@
 <script>
 export default {
   name: "ArticleEdit",
+  middleware: 'authenticated'
 }
 </script>
