@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/",
+    "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/layout",
+    "children": [
+      {
+        "path": "",
+        "name": "home",
+        "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/home",
+        "_name": "_51f25b81"
+      },
+      {
+        "path": "/login",
+        "name": "login",
+        "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/login",
+        "_name": "_26dd45f2"
+      },
+      {
+        "path": "/register",
+        "name": "register",
+        "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/login",
+        "_name": "_26dd45f2"
+      },
+      {
+        "path": "/profile/:username",
+        "name": "profile",
+        "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/profile",
+        "_name": "_3255f072"
+      },
+      {
+        "path": "/settings",
+        "name": "settings",
+        "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/settings",
+        "_name": "_f5e7fc76"
+      },
+      {
+        "path": "/editor",
+        "name": "editor",
+        "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/editor",
+        "_name": "_cde330e2"
+      },
+      {
+        "path": "/article/:slug",
+        "name": "article",
+        "component": "/Users/kenny/work/kenny/workplace/training/training-03-03/pages/article",
+        "_name": "_64c169d8"
+      }
+    ],
+    "_name": "_b6457d68"
+  }
+]
